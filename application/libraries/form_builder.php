@@ -622,7 +622,7 @@ class Form_builder {
                     if (isset($this->elm_options['options']) && !empty($this->elm_options['options'])) {
                         $name = $this->elm_options['name'];
                         $options = $this->elm_options['options'];
-                        $value = $this->elm_options['value'];
+                        $value = $this->elm_options['value'][0];
 
                         unset($this->elm_options['name']);
                         unset($this->elm_options['value']);

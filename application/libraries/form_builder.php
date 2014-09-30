@@ -621,8 +621,8 @@ class Form_builder {
                     /* form_dropdown is different than an input */
                     if (isset($this->elm_options['options']) && !empty($this->elm_options['options'])) {
                         $name = $this->elm_options['name'];
-                        $options = $this->elm_options['options'];
-                        $value = $this->elm_options['value'][0];
+                        $options = $this->elm_options['options'][0];
+                        $value = $this->elm_options['value'];
 
                         unset($this->elm_options['name']);
                         unset($this->elm_options['value']);
